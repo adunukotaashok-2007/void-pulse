@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>VOID PULSE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="startScreen" class="screen active">
+  <h1 class="glow">VOID PULSE</h1>
+  <p class="tag">You are light in infinite darkness</p>
+  <p class="info">
+    Tap &amp; hold to move<br>
+    Double tap to pulse<br>
+    Collect orbs · Avoid shadows
+  </p>
+  <button id="btnStart">ENTER VOID</button>
+</div>
+
+<div id="deathScreen" class="screen">
+  <h1 class="dead">CONSUMED</h1>
+  <p id="finalStats" class="stats"></p>
+  <button id="btnRetry">TRY AGAIN</button>
+</div>
+
+<div id="hud">
+  <div class="hud-item">⚡ <span id="hScore">0</span></div>
+  <div class="hud-item">🛡️<div id="hpBar"><div id="hpFill"></div></div></div>
+  <div class="hud-item">🔮 <span id="hOrbs">0</span></div>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/entities.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
